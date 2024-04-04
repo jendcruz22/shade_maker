@@ -1,13 +1,14 @@
+import React, { useCallback, useEffect, useState } from 'react';
 import ColorPicker from './components/ColorPicker.js';
+import Nav from './components/Nav.js';
 import Result from './components/Result.js';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Container, Row, Col } from 'react-bootstrap';
-import { useCallback, useEffect, useState } from 'react';
 
 function App() {
+  const [currentColor, setCurrentColor] = useState("#000000"); // Initialize with a hex color value
 
-  let [currentColor, setCurrentColor] = useState("000000");
-  let [colors, setColors] = useState(null);
+  const [colors, setColors] = useState(null);
 
   const fetchData = useCallback(async () => {
     let colorVal = currentColor;
@@ -15,7 +16,7 @@ function App() {
     if (colorVal.startsWith('#')) {
       colorVal = colorVal.slice(1);
     }
-    
+
     try {
       const response = await fetch(`https://www.thecolorapi.com/id?hex=${colorVal}`);
       if (!response.ok) {
@@ -33,19 +34,20 @@ function App() {
     fetchData();
   }, [fetchData]);
 
-
   return (
-    <Container>
-      <Row>
-        <Col>
-          {/* Passes currentColor as a prop to ColorPicker and defines an onColorChange function that updates currentColor when the color changes */}
-          <ColorPicker currentColor={currentColor} onColorChange={currentColor => { setCurrentColor(currentColor); }} />
-        </Col>
-        <Col>
-          {colors !== null && <Result colors={colors} />}
-        </Col>
-      </Row>
-    </Container>
+    <>
+      <Nav />
+      <Container>
+        <Row>
+          <Col>
+            <ColorPicker currentColor={currentColor} onColorChange={setCurrentColor} />
+          </Col>
+          <Col>
+            {colors !== null && <Result colors={colors} />}
+          </Col>
+        </Row>
+      </Container>
+    </>
   );
 }
 
