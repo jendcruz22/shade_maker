@@ -1,22 +1,22 @@
 import React, { useCallback, useEffect, useState } from 'react';
-import ColorPicker from './components/ColorPicker.js';
 import Nav from './components/Nav.js';
+import ImageUpload from './components/ImageUpload.js';
+import ImageDisplay from './components/ImageDisplay.js';
+import ColorPicker from './components/ColorPicker.js';
 import Result from './components/Result.js';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Container, Row, Col } from 'react-bootstrap';
 
 function App() {
-  const [currentColor, setCurrentColor] = useState("#000000"); // Initialize with a hex color value
-
+  const [selectedImage, setSelectedImage] = useState('');
+  const [currentColor, setCurrentColor] = useState("#000000");
   const [colors, setColors] = useState(null);
 
   const fetchData = useCallback(async () => {
     let colorVal = currentColor;
-
     if (colorVal.startsWith('#')) {
       colorVal = colorVal.slice(1);
     }
-
     try {
       const response = await fetch(`https://www.thecolorapi.com/id?hex=${colorVal}`);
       if (!response.ok) {
@@ -37,6 +37,10 @@ function App() {
   return (
     <>
       <Nav />
+      <ImageUpload onImageSelected={setSelectedImage} />
+      <ImageDisplay selectedImage={selectedImage} />
+      {/* <ImageColorIdentifier /> */}
+
       <Container>
         <Row>
           <Col>

@@ -1,6 +1,6 @@
 import { Form } from 'react-bootstrap';
 
-const ColorPicker = ({ currentColor, onColorChange }) => {
+function ColorPicker ({ currentColor, onColorChange }) {
     // A function that ensures the color passed to this component is always prefaced with a #
     function addHashtag(value) {
         if (value.startsWith('#')) {
