@@ -37,17 +37,16 @@ function App() {
   return (
     <>
       <Nav />
-      <ImageUpload onImageSelected={setSelectedImage} />
-      <ImageDisplay selectedImage={selectedImage} />
-      {/* <ImageColorIdentifier /> */}
 
       <Container>
         <Row>
           <Col>
+            <ImageUpload onImageSelected={setSelectedImage} />
             <ColorPicker currentColor={currentColor} onColorChange={setCurrentColor} />
           </Col>
           <Col>
             {colors !== null && <Result colors={colors} />}
+            <ImageDisplay selectedImage={selectedImage} />
           </Col>
         </Row>
       </Container>
