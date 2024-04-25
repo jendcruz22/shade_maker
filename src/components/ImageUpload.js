@@ -14,7 +14,7 @@ function ImageUpload({ onImageSelected, analyzeImage }) {
         <Form.Label>Upload Image</Form.Label>
         <Form.Control type="file" accept="image/*" onChange={handleFileSelect} required />
       </Form.Group>
-      <Button variant="primary" type="button" onClick= {analyzeImage}>
+      <Button variant="outline-secondary" type="button" onClick= {analyzeImage}>
         Submit
       </Button>
     </Form>

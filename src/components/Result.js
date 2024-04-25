@@ -6,8 +6,8 @@ function Result({ colors }) {
   const rgbColor = (r, g, b) => `rgb(${r},${g},${b})`;
 
   return (
-    <Card style={{ width: '18rem' }}>
-      <div style={{ backgroundColor: colors.hex.value, height: '20px' }}></div>
+    <Card style={{ width: '18rem', marginTop: '15px' }}>
+      <div style={{ backgroundColor: colors.hex.value, height: '10px' }}></div>
       <Card.Body>
         <Card.Title>{colors.name.value}</Card.Title>
         <Card.Text>

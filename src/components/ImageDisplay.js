@@ -4,7 +4,7 @@ function ImageDisplay({ selectedImage }) {
             {selectedImage && (
                 <div>
                     <h3>Selected Image Preview:</h3>
-                    <img src={selectedImage} alt="Selected" style={{ maxWidth: '100%', maxHeight: '300px' }} />
+                    <img src={selectedImage} alt="Selected" style={{ maxWidth: '100%', maxHeight: '250px' }} />
                 </div>
             )}
         </>
