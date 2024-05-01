@@ -1,8 +1,8 @@
 // Imports
+import styles from './styles.module.css';
 import React, { useCallback, useEffect, useState, useRef } from 'react';
 import Nav from './components/Nav.js';
 import About from './components/About.js';
-import Usage from './components/Usage.js';
 import ImageUpload from './components/ImageUpload.js';
 import ImageDisplay from './components/ImageDisplay.js';
 import ColorPicker from './components/ColorPicker.js';
@@ -114,8 +114,7 @@ function App() {
     <>
       <Nav />
 
-      <Container style={{margin: '20px auto'}}>
-        <Usage />
+      <Container className={styles.container}>
         <Row>
           <Col>
             <ColorPicker currentColor={currentColor} onColorChange={setCurrentColor} />

@@ -28,39 +28,39 @@ function Result({ colors }) {
 
         {/* RGB Values */}
         <Row>
-          <Col className="text-center">
+          <Col>
             <b>R:</b>{colors.rgb.r}
           </Col>
-          <Col className="text-center">
+          <Col>
             <b>G:</b>{colors.rgb.g}
           </Col>
-          <Col className="text-center">
+          <Col>
             <b>B:</b>{colors.rgb.b}
           </Col>
         </Row>
 
         {/* RGB Percentages */}
         <Row>
-          <Col className="text-center">
+          <Col>
             <b>R%:</b>{(colors.rgb.fraction.r * 100).toFixed(2)}
           </Col>
-          <Col className="text-center">
+          <Col>
             <b>G%:</b> {(colors.rgb.fraction.g * 100).toFixed(2)}
           </Col>
-          <Col className="text-center">
+          <Col>
             <b>B%:</b> {(colors.rgb.fraction.b * 100).toFixed(2)}
           </Col>
         </Row>
 
         {/* hsv Percentages */}
         <Row>
-          <Col className="text-center">
+          <Col>
             <b>H:</b>{colors.hsv.h}
           </Col>
-          <Col className="text-center">
+          <Col>
             <b>S:</b>{colors.hsv.s}
           </Col>
-          <Col className="text-center">
+          <Col>
             <b>V:</b>{colors.hsv.v}
           </Col>
         </Row>

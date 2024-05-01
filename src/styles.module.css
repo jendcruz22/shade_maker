@@ -1,18 +1,49 @@
-/* Navigation */
-.navMargin {
-  margin: 0.2% 0;
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Jersey+10&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+/* General Styling */
+body {  
+  font-family: "Roboto Mono", monospace;
 }
 
-/* Usage Accordion */
-.usageAccordion {
-  margin-bottom: 20px;
+.mainHeadings {
+  font-size: 2rem;
+}
+
+.links {
+  text-decoration: none;
+}
+
+/* Logo Styling */
+.shadeMakerLogo {
+  font-family: "Jersey 10", sans-serif;
+}
+
+.colorChanger {
+  color: violet;
+  animation: colorChange 10s infinite alternate;
+}
+
+@keyframes colorChange {
+  0% { color: violet; }
+  15% { color: indigo; }
+  30% { color: blue; }
+  45% { color: green; }
+  60% { color: yellow; }
+  77% { color: orange; }
+  100% { color: red; }
+}
+
+/* Container */
+.container {
+  max-width: 800px;
+  margin: 20px auto 0 auto;
+  padding: 3rem;
 }
 
 /* About */
 .about {
-  max-width: 800px;
-  margin: 50px auto 0 auto;
-  padding: 2rem;
+  border-top: 1px solid grey;
 }
 
 .about h2 {
@@ -26,6 +57,6 @@
   margin-bottom: 1rem;
 }
 
-.about .content {
-  margin-top: 1.5rem;
+.aboutAccordion {
+  margin-top: 1rem;
 }
