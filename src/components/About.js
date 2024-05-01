@@ -1,4 +1,4 @@
-import { Container, Button, Accordion } from 'react-bootstrap';
+import { Container, Accordion } from 'react-bootstrap';
 import { BoxArrowUpRight } from 'react-bootstrap-icons';
 import styles from '../styles.module.css';
 
