@@ -2,6 +2,7 @@
 import React, { useCallback, useEffect, useState, useRef } from 'react';
 import Nav from './components/Nav.js';
 import About from './components/About.js';
+import Usage from './components/Usage.js';
 import ImageUpload from './components/ImageUpload.js';
 import ImageDisplay from './components/ImageDisplay.js';
 import ColorPicker from './components/ColorPicker.js';
@@ -113,16 +114,18 @@ function App() {
     <>
       <Nav />
 
-      <Container style={{marginTop: '10px'}}>
+      <Container style={{margin: '20px auto'}}>
+        <Usage />
         <Row>
           <Col>
+            <ColorPicker currentColor={currentColor} onColorChange={setCurrentColor} />
+            or
             <ImageUpload onImageSelected={setSelectedImage} analyzeImage={analyzeImage} />
-            <ImageDisplay selectedImage={selectedImage} />
             <canvas ref={canvasRef} style={{ display: 'none' }} />
           </Col>
           <Col>
-            <ColorPicker currentColor={currentColor} onColorChange={setCurrentColor} />
             {colors !== null && <Result colors={colors} />}
+            <ImageDisplay selectedImage={selectedImage} />
           </Col>
         </Row>
       </Container>
