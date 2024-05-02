@@ -1,6 +1,6 @@
 # **Shade Maker**: Your Comprehensive Color Companion
 
-Shade Maker Shade Maker is a web application designed to help you explore and understand the world of color.
+Shade Maker is designed to help you explore and understand the world of color.
 
 ## **Table of Contents:**
 1.   <a href='#about'>About</a>
