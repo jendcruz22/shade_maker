@@ -1,23 +1,6 @@
-<style>
-.colorChanger {
-  color: violet;
-  animation: colorChange 10s infinite alternate;
-}
-
-@keyframes colorChange {
-  0% { color: violet; }
-  15% { color: indigo; }
-  30% { color: blue; }
-  45% { color: green; }
-  60% { color: yellow; }
-  77% { color: orange; }
-  100% { color: red; }
-}
-</style>
-
 # **Shade Maker**: Your Comprehensive Color Companion
 
-<span class='colorChanger'>Shade Maker</span> Shade Maker is a web application designed to help you explore and understand the world of color.
+Shade Maker Shade Maker is a web application designed to help you explore and understand the world of color.
 
 ## **Table of Contents:**
 1.   <a href='#about'>About</a>
