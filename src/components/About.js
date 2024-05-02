@@ -39,7 +39,14 @@ function About() {
               <li><b>JavaScript</b> is the programming language that powers the core functionality of this application.</li>
               <li><b><a className={styles.links} href='https://www.thecolorapi.com/'>The Color API <BoxArrowUpRight /></a></b> integration ensures you receive the most accurate and up-to-date color information possible.</li>
             </ul>
-            </Accordion.Body>
+          </Accordion.Body>
+        </Accordion.Item>
+
+        <Accordion.Item eventKey="2">
+          <Accordion.Header style={{ marginBottom: '0rem' }}>How can I access the application's code?</Accordion.Header>
+          <Accordion.Body>
+            Shade Maker is open-source and available for anyone to learn from! You can find the complete source code on GitHub: <a href='https://github.com/jendcruz22/shade_maker'>https://github.com/jendcruz22/shade_maker</a>
+          </Accordion.Body>
         </Accordion.Item>
       </Accordion>
     </Container>
