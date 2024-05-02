@@ -32,10 +32,14 @@ function About() {
         <Accordion.Item eventKey="1">
           <Accordion.Header style={{ marginBottom: '0rem' }}>How does this application work?</Accordion.Header>
           <Accordion.Body>
-            Shade Maker leverages the power of HTML5 Canvas and JavaScript to analyze each pixel in your image and identify the most prevalent color.
-            <br />
-            Additionally, the <a className={styles.links} href='https://www.thecolorapi.com/'>colorAPI <BoxArrowUpRight /></a> integration ensures you get the most up-to-date color information.
-          </Accordion.Body>
+            Shade Maker analyzes the dominant colors in your images or uses the color selection provided by you. It uses a combination of powerful technologies:
+            <ul>
+              <li><b>ReactJS</b> and its Hooks allow a smooth and efficient user experience.</li>
+              <li><b>HTML5</b> Canvas enables Shade Maker to directly analyze the pixels within your image.</li>
+              <li><b>JavaScript</b> is the programming language that powers the core functionality of this application.</li>
+              <li><b><a className={styles.links} href='https://www.thecolorapi.com/'>The Color API <BoxArrowUpRight /></a></b> integration ensures you receive the most accurate and up-to-date color information possible.</li>
+            </ul>
+            </Accordion.Body>
         </Accordion.Item>
       </Accordion>
     </Container>

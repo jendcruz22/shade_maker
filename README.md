@@ -1,70 +1,64 @@
-# Getting Started with Create React App
+<style>
+.colorChanger {
+  color: violet;
+  animation: colorChange 10s infinite alternate;
+}
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+@keyframes colorChange {
+  0% { color: violet; }
+  15% { color: indigo; }
+  30% { color: blue; }
+  45% { color: green; }
+  60% { color: yellow; }
+  77% { color: orange; }
+  100% { color: red; }
+}
+</style>
 
-## Available Scripts
+# **Shade Maker**: Your Comprehensive Color Companion
 
-In the project directory, you can run:
+<span class='colorChanger'>Shade Maker</span> Shade Maker is a web application designed to help you explore and understand the world of color.
 
-### `npm start`
+## **Table of Contents:**
+1.   <a href='#about'>About</a>
+2.   <a href='#kf'>Key Features</a>
+3.   <a href='#demo'>Demonstration</a>
+4.   <a href='#ts'>Technology Stack</a>
+5.   <a href='#rta'>Run the application locally</a>
+6.   <a href='#fd'>Future Development</a>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## **<span id='about'>1. About</span>**
+This a web application built with ReactJS that empowers users to explore and analyze colors.
+### Who can benefit from Shade Maker?
+- Designers
+- Creatives
+- Developers
+- Anyone curious about the world of color!
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## **<span id='kf'>2. Key Features</span>**
+- **Dominant Color Analysis:** Upload an image and instantly discover the most prominent color within it. Shade Maker utilizes advanced image processing to accurately identify the dominant color.
+- **Manual Color Selection:** Use the built-in color picker to select any color and view detailed information about it, including its name, hex code, RGB, or HSV values.
+- **Modern Technology Stack:** Built with ReactJS, HTML5 Canvas, JavaScript, and colorapi integration, Shade Maker ensures a smooth user experience and delivers the most up-to-date color information.
 
-### `npm test`
+## **<span id='demo'>3. Demonstration</span>**
+Test it out! Using Shade Maker is simple:
+- Visit the Shade Maker website (https://shademaker.netlify.app/).
+- Upload an image or use the color selection tool.
+- Instantly see the dominant color in your image (if uploaded) or get detailed information about the selected color.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## **<span id='ts'>4. Technology Stack</span>**
+- Frontend: Built with ReactJS and Hooks for a performant and interactive user interface.
+- Image Processing: Leverages HTML5 Canvas for efficient pixel manipulation and in-browser color analysis.
+- Color Data: Integrates with the colorapi service to provide access to a comprehensive color database.
+- Core Functionality: Powered by JavaScript for smooth application logic and features.
 
-### `npm run build`
+## **<span id='rta'>5. Run the application locally</span>**
+- Clone the repository: git clone https://github.com/your-username/shade-maker.git
+- Install dependencies: npm install
+- Start the development server: npm start
+- Visit http://localhost:3000 in your browser to access the application.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## **<span id='fd'>6. Future Development</span>**
+Actively working on integrating [TryColors.com](https://trycolors.com/)'s API. This will provide access to their advanced color theory tools and a digital color mixer that offers real-world accuracy. This translates to:
+- **Smarter Color Choices:** Make informed decisions when selecting and combining colors for your projects.
+- **Reduced Waste:** Eliminate the guesswork and save money on unused paints by mixing colors accurately with the digital mixer.
