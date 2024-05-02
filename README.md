@@ -36,9 +36,16 @@ Test it out! Using Shade Maker is simple:
 - Core Functionality: Powered by JavaScript for smooth application logic and features.
 
 ## **<span id='rta'>5. Run the application locally</span>**
+### **Requirements**
+You must have the following installed:
+- [VS Code](https://code.visualstudio.com/download) (or a similar IDE)
+- [Node.js](https://nodejs.org/en/download)
+- [Git](https://git-scm.com/downloads) or [Github Desktop](https://desktop.github.com/)
+
+### **Process**
 - Clone the repository: git clone https://github.com/your-username/shade-maker.git
 - Install dependencies: npm install
-- Start the development server: npm start
+- Start the development server by running the following command in your terminal: npm start
 - Visit http://localhost:3000 in your browser to access the application.
 
 ## **<span id='fd'>6. Future Development</span>**
